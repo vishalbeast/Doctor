@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctors</title>
+</head>
+<body>
+
+{% if products %}
+    <ul>
+    {% for product in products %}
+        <li>
+            <p>{{ product.name }}</p>
+            <p>{{ product.price }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Doctors are available.</p>
+{% endif %}
+</body>
+</html>
